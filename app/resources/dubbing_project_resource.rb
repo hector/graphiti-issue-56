@@ -1,0 +1,2 @@
+class DubbingProjectResource < ProjectResource
+end

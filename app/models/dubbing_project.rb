@@ -1,0 +1,2 @@
+class DubbingProject < Project
+end

@@ -1,0 +1,2 @@
+class DubbingResource < RenderableResource
+end

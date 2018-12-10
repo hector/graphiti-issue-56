@@ -1,0 +1,2 @@
+class VoiceoverProject < Project
+end

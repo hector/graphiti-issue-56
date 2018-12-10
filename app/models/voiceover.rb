@@ -1,0 +1,2 @@
+class Voiceover < Renderable
+end
