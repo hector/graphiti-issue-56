@@ -1,24 +1,22 @@
-# README
+Example app to reproduce [graphiti-api-/graphiti issue#56](https://github.com/graphiti-api/graphiti/issues/56)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Instructions:
 
-Things you may want to cover:
+```bash
+# Clone the repo
+git clone https://github.com/hector/graphiti-issue-56.git
+cd graphiti-issue-56
 
-* Ruby version
+# Initialize the application
+bundle install
+bundle exec rake db:setup
 
-* System dependencies
+# Run the server
+bundle exec rails server
 
-* Configuration
+# On a different shell:
+# Run the failing example
+bundle exec rake issue56
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The code to trigger the failing example is found at `lib/tasks/issue56.rake`.
